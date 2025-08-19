@@ -74,7 +74,7 @@ const Home = () => {
               ))}
             </div>
             <div className="w-1/10 hidden xl:block"></div>
-            <div className="w-full md:w-1/2 sm:flex justify-between pb-12 sm:pb-0 px-1">
+            <div className="w-full md:w-1/2 sm:flex justify-between pb-24 md:pb-12 sm:pb-0 px-1">
               <div className="text-gray-300 pb-5 font-bold text-lg uppercase tracking-widest">
                 <p className="txt">Ashan weerakkodi</p>
                 <p className="txt">Full-stack developer</p>

@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const SkillSec01 = [
   {
-    category: "Web Development",
+    category: "_Web Development",
     skills: [
       { name: "React JS", percentage: 80 },
       { name: "Next JS", percentage: 82 },
@@ -20,14 +20,14 @@ const SkillSec01 = [
 
 const SkillSec02 = [
   {
-    category: "Database",
+    category: "_Database",
     skills: [
       { name: "MongoDB", percentage: 85 },
       { name: "MySQL", percentage: 75 },
     ],
   },
   {
-    category: "Graphic Design",
+    category: "_Graphic Design",
     skills: [
       { name: "Adobe Photoshop", percentage: 65 },
       { name: "Adobe Illustrator", percentage: 60 },

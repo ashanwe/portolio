@@ -19,7 +19,7 @@ const About = () => {
   return (
     <div className="w-full md:flex pr-10 pt-20 pl-[10%] text-gray-300">
       <div className="w-full md:w-1/2 px-1">
-        <h1 className="uppercase font-semibold text-2xl pb-10">Summary</h1>
+        <h1 className="uppercase font-semibold text-2xl pb-10">_Summary</h1>
         <p className="text-xl font-semibold flex">
           Your dedicated full-time web development professional, equipped with
           extensive experience in both web design and development. With a touch
@@ -31,7 +31,7 @@ const About = () => {
       </div>
       <div className="w-1/10 hidden xl:block"></div>
       <div className="w-full md:w-1/2 px-1">
-        <h1 className="uppercase font-semibold text-2xl pb-10">services</h1>
+        <h1 className="uppercase font-semibold text-2xl pb-10">_services</h1>
         {skills.map((skill, index) => (
           <div
             key={index}
