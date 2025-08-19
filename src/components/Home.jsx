@@ -9,7 +9,7 @@ const navLinks = [
   },
 
   {
-    url: "/https://github.com/ashanwe",
+    url: "https://github.com/ashanwe",
     title: "github",
   },
 ];
