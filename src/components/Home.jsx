@@ -4,19 +4,12 @@ import MainText from "./MainText";
 
 const navLinks = [
   {
-    url: "/",
+    url: "https://www.linkedin.com/in/ashan-weerakkodi/",
     title: "Linkedin",
   },
+
   {
-    url: "/",
-    title: "read.cv",
-  },
-  {
-    url: "/",
-    title: "email",
-  },
-  {
-    url: "/",
+    url: "/https://github.com/ashanwe",
     title: "github",
   },
 ];
@@ -64,7 +57,9 @@ const Home = () => {
           <div className="w-full md:flex sm:pr-10 pl-[10%]">
             <div className="w-1/2 sm:flex text-gray-300 px-1 gap-4 md:gap-10 font-semibold text-lg uppercase pb-10 md:pb-0">
               {navLinks.map((link, index) => (
-                <p
+                <a
+                  href={link.url}
+                  target="_blank"
                   key={index}
                   className="link flex gap-1 pb-4 sm:pb-0 cursor-pointer">
                   {link.title}
@@ -75,7 +70,7 @@ const Home = () => {
                     viewBox="0 0 448 512">
                     <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                   </svg>
-                </p>
+                </a>
               ))}
             </div>
             <div className="w-1/10 hidden xl:block"></div>

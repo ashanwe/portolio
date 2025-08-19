@@ -8,12 +8,12 @@ const SkillSec01 = [
   {
     category: "Web Development",
     skills: [
-      { name: "React JS", percentage: 90 },
-      { name: "Next JS", percentage: 85 },
+      { name: "React JS", percentage: 80 },
+      { name: "Next JS", percentage: 82 },
       { name: "Node JS - MERN Stack", percentage: 80 },
-      { name: "WordPress", percentage: 75 },
+      { name: "WordPress", percentage: 90 },
       { name: "Tailwind CSS", percentage: 90 },
-      { name: "Bootstrap", percentage: 85 },
+      { name: "Bootstrap", percentage: 95 },
     ],
   },
 ];
@@ -22,15 +22,15 @@ const SkillSec02 = [
   {
     category: "Database",
     skills: [
-      { name: "MongoDB", percentage: 80 },
-      { name: "MySQL", percentage: 85 },
+      { name: "MongoDB", percentage: 85 },
+      { name: "MySQL", percentage: 75 },
     ],
   },
   {
     category: "Graphic Design",
     skills: [
-      { name: "Adobe Photoshop", percentage: 95 },
-      { name: "Adobe Illustrator", percentage: 90 },
+      { name: "Adobe Photoshop", percentage: 65 },
+      { name: "Adobe Illustrator", percentage: 60 },
     ],
   },
 ];
@@ -71,7 +71,7 @@ const Services = () => {
       // Animate the border fill
       gsap.fromTo(
         borderEl,
-        { background: `linear-gradient(to right, green 0%, white 0%)` },
+        { background: `linear-gradient(to right, white 0%, white 0%)` },
         {
           background: `linear-gradient(to right, white ${targetPercentage}%, gray ${targetPercentage}%)`,
           duration: 2,
@@ -106,7 +106,7 @@ const Services = () => {
                     position: "relative",
                   }}>
                   <h1>{skill.name}</h1>
-                  <h1 className="percentage text-gray-300">
+                  <h1 className="percentage text-gray-300 hidden">
                     {skill.percentage}%
                   </h1>
 
@@ -145,7 +145,7 @@ const Services = () => {
                   data-percentage={skill.percentage}
                   ref={el => skillRefs.current.push(el)}>
                   <h1>{skill.name}</h1>
-                  <h1 className="percentage text-gray-300">
+                  <h1 className="percentage text-gray-300 hidden">
                     {skill.percentage}%
                   </h1>
 
